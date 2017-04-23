@@ -15,16 +15,12 @@ public class Display {
 		}
 	}
 	
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
 	public int getValue() {
 		return value;
-	}
-
-	public static void main(String[] args) {
-		Display d = new Display(23);
-		for(;;) {
-			d.increase();
-			System.out.println(d.getValue());
-		}
 	}
 
 }
